@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package pcbook;
+option go_package = "github.com/SumanSourav20/pcbook_grpc/pb";
+
+import "memory.proto";
+
+message CPU {
+    string brand = 1;
+    string model_name = 2;
+    uint32 cores = 3;
+    uint32 l1_cache = 4;
+    uint32 l2_cache = 5;
+    uint32 l3_cache = 6;
+    uint32 treads = 7;
+    uint32 min_ghz = 8;
+    uint32 max_ghz = 9; 
+}
+
+message GPU {
+    string brand = 1;
+    string model_name = 2;
+    uint32 min_ghz = 3;
+    uint32 max_ghz = 4;
+    Memory memory = 5;
+}

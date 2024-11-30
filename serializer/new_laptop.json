@@ -1,0 +1,57 @@
+{
+	"cpu":  {
+		"brand":  "Intel",
+		"modelName":  "i9 12gen",
+		"cores":  2,
+		"l1Cache":  100000,
+		"l2Cache":  1000000,
+		"l3Cache":  10000000,
+		"treads":  4,
+		"minGhz":  2,
+		"maxGhz":  4
+	},
+	"gpu":  [
+		{
+			"brand":  "AMD",
+			"modelName":  "RX 3000",
+			"minGhz":  3,
+			"maxGhz":  4,
+			"memory":  {
+				"unit":  "KILOBYTE",
+				"size":  "356123463"
+			}
+		}
+	],
+	"ram":  {
+		"ramType":  "DDR5",
+		"memory":  {
+			"unit":  "TERABYTE",
+			"size":  "9"
+		}
+	},
+	"storage":  [
+		{
+			"driver":  "SSD",
+			"memory":  {
+				"unit":  "KILOBYTE",
+				"size":  "15330141"
+			}
+		}
+	],
+	"screen":  {
+		"size":  15,
+		"resolution":  {
+			"width":  1600,
+			"height":  1080
+		},
+		"panel":  "OLED",
+		"multitouch":  false
+	},
+	"keyboard":  {
+		"layout":  "AZERTY",
+		"backlit":  false
+	},
+	"id":  "f3fb072f-d564-4c3f-be64-a477c131c529",
+	"brand":  "My own Brand",
+	"modelName":  "Laptop with Random parts"
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pcbook;
+option go_package = "github.com/SumanSourav20/pcbook_grpc/pb";
+
+message Memory {
+    enum Unit {
+        BIT = 0;
+        BYTE = 1;
+        KILOBYTE = 2;
+        MEGABYTE = 3;
+        GIGABYTE = 4;
+        TERABYTE = 5;
+    }
+
+    Unit unit = 1;
+    uint64 size = 2;
+}

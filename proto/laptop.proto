@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package pcbook;
+
+option go_package = "github.com/SumanSourav20/pcbook_grpc/pb";
+
+import "screen.proto";
+import "storage.proto";
+import "processor.proto";
+import "ram.proto";
+import "keyboard.proto";
+
+message Laptop {
+    CPU cpu = 1;
+    repeated GPU gpu = 2;
+    RAM ram = 3;
+    repeated Storage storage = 4;
+    Screen screen = 5;
+    Keyboard keyboard = 6;
+    string id = 7;
+    string brand = 8;
+    string model_name = 9;
+    oneof weight {
+        double weight_kg = 10;
+        double weight_lb = 11;
+    }
+}

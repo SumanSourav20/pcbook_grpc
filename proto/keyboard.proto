@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pcbook;
+
+option go_package = "github.com/SumanSourav20/pcbook_grpc/pb";
+
+message Keyboard {
+    enum Layout {
+        UNKNOWN = 0;
+        QWERTY = 1;
+        QWERTZ = 2;
+        AZERTY = 3;
+        DVORAK = 4;
+        COLEMAK = 5;
+    }
+    Layout layout = 1;
+    bool backlit = 2;
+}

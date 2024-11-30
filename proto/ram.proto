@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pcbook;
+
+option go_package = "github.com/SumanSourav20/pcbook_grpc/pb";
+
+import "memory.proto";
+
+message RAM {
+    enum RAMType {
+        UNKNOWN = 0;
+        DDR3 = 1;
+        DDR4 = 2;
+        DDR5 = 3;
+    }
+    RAMType ram_type = 1;
+    Memory memory = 2;
+}
+
